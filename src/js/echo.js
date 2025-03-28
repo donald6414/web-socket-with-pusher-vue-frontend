@@ -5,9 +5,10 @@ window.Pusher = Pusher
 
 const echo = new Echo({
   broadcaster: 'pusher',
-  key: 'c8b3c1b362bcda4bf472',
+  key: 'aaa0bef97e7a5bd86f38',
   cluster: 'eu',
   forceTLS: true,
+  encrypted: true,
 })
 
 export default echo
