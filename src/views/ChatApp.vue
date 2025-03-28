@@ -68,7 +68,6 @@ const pusher = new Pusher('aaa0bef97e7a5bd86f38', {
 
 const channel = pusher.subscribe('public-messages')
 channel.bind('MessagingEvent', function (data) {
-  console.log("Here is the data: ", data);
   messages.value.push(data)
 })
 
